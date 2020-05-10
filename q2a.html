@@ -8,13 +8,15 @@
     <body>
         
         <header>
-        
-            <img src="logo.png">
-            <h1>The Open University Walking Club</h1>
-            <p>Logged in as <b>username</b></p>
-            <hr>
+            
+            <img id="logo" src="logo.png" width="90px" height="60px">
+            <h1 id="title">The Open University Walking Club</h1>
+            
             
         </header>
+        
+        <p id="loggedin">Logged in as <b>admin user</b></p>
+            <hr>
         
         <section>
         
@@ -23,10 +25,10 @@
             <div class="button">
                 <a href="#">Back</a>
             </div>
-            
+            <div id="form-container">
             <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="addwalk" name="addwalk">
                 
-                <div class="block">
+                <div id="block1">
                     
                     <label for="name">Name of walk: </label>
                     <input type="text" name="name"><br>
@@ -40,16 +42,16 @@
                     <label for="meeting">Meeting point: </label>
                     <input type="text" name="meeting"><br>
                     
-                    <label for="name">Distance</label>
-                    <input type="text" name="name"><br>
+                    <label for="name">Distance: </label>
+                    <input type="text" name="name">
                     
                 </div>
-                <div class="block">
+                <div id="block2">
                     
-                    <label for="name">Notes: </label>
-                    <textarea name="name" rows="10" cols="20" required></textarea><br>
+                    <label for="notes">Notes: </label>
+                    <textarea name="notes" id="notes" rows="7" cols="20" required></textarea><br>
                     
-                    <label for="date">Status: </label>
+                    <label for="status">Status: </label>
                     <select name="status"><br>
                         <option value="approved">Approved</option>
                         <option value="rejected">Rejected</option>
@@ -58,17 +60,18 @@
                     
                 </div>
                 
-                <div class="button">
+                <div class="button" id="submit">
                     <input type="submit" value="OK">
                 </div>
                 
             </form>
+            </div>
             
         </section>
         
         <footer>
             <hr>
-            <p>Copyright c 2020 The Open University</p>
+            <p id="footertext">Copyright © 2020 The Open University</p>
         </footer>
         
     </body>
