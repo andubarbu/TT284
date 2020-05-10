@@ -15,41 +15,40 @@
             
         </header>
         
-        <p id="loggedin">Logged in as <b>admin user</b></p>
+        <p id="loggedin">Logged in as <b>admin</b></p>
             <hr>
         
         <section>
         
             <h1>Add New Walk</h1>
             
-            <div class="button">
-                <a href="#">Back</a>
-            </div>
+            
+            <a href="#"><div id="backbtn" class="button">Back</div></a>
             <div id="form-container">
             <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="addwalk" name="addwalk">
                 
                 <div id="block1">
                     
                     <label for="name">Name of walk: </label>
-                    <input type="text" name="name"><br>
+                    <input type="text" name="name" required><br>
                     
                     <label for="date">Date: </label>
-                    <input type="text" name="date"><br>
+                    <input type="text" name="date" required><br>
                     
                     <label for="name">Start time: </label>
-                    <input type="text" name="time"><br>
+                    <input type="text" name="time" required><br>
                     
                     <label for="meeting">Meeting point: </label>
-                    <input type="text" name="meeting"><br>
+                    <input type="text" name="meeting" required><br>
                     
                     <label for="name">Distance: </label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
                     
                 </div>
                 <div id="block2">
                     
                     <label for="notes">Notes: </label>
-                    <textarea name="notes" id="notes" rows="7" cols="20" required></textarea><br>
+                    <textarea name="notes" id="notes" rows="7" cols="20"></textarea><br>
                     
                     <label for="status">Status: </label>
                     <select name="status"><br>
@@ -60,9 +59,7 @@
                     
                 </div>
                 
-                <div class="button" id="submit">
-                    <input type="submit" value="OK">
-                </div>
+                    <input class="button" type="submit" value="OK">
                 
             </form>
             </div>
