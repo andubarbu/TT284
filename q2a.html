@@ -1,4 +1,4 @@
-<!doctype html>
+<DOCTYPE html>
 <html>
     <head>
         <title>Add new walk</title>
@@ -29,27 +29,47 @@
                 <div class="block">
                     
                     <label for="name">Name of walk: </label>
-                    <input type="text" name="name">
+                    <input type="text" name="name"><br>
                     
                     <label for="date">Date: </label>
-                    <input type="text" name="date">
+                    <input type="text" name="date"><br>
                     
                     <label for="name">Start time: </label>
-                    <input type="text" name="time">
+                    <input type="text" name="time"><br>
                     
                     <label for="meeting">Meeting point: </label>
-                    <input type="text" name="meeting">
+                    <input type="text" name="meeting"><br>
                     
                     <label for="name">Distance</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name"><br>
                     
+                </div>
+                <div class="block">
+                    
+                    <label for="name">Notes: </label>
+                    <textarea name="name" rows="10" cols="20" required></textarea><br>
+                    
+                    <label for="date">Status: </label>
+                    <select name="status"><br>
+                        <option value="approved">Approved</option>
+                        <option value="rejected">Rejected</option>
+                        <option value="proposed">Proposed</option>
+                    </select>
+                    
+                </div>
+                
+                <div class="button">
+                    <input type="submit" value="OK">
                 </div>
                 
             </form>
             
         </section>
         
-        <footer></footer>
+        <footer>
+            <hr>
+            <p>Copyright c 2020 The Open University</p>
+        </footer>
         
     </body>
 </html>
