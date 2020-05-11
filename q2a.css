@@ -13,9 +13,11 @@ header{
 }
 #logo{
     float: left;
+    width: 90px;
+    height: 60px;
 }
 #title{
-    font-size: 20;
+    font-size:20px;
     font-weight: normal;
     margin-left: 5px; 
 }
@@ -30,26 +32,23 @@ header{
     display: inline-block;
     text-align: right;
 }
+#block1{
+    float: left;
+}
 #block2{
     margin-left: 20px;
 }
 textarea{
     vertical-align: top;
-    height: 130px;
+    height: 140px;
 }
 input:not([type="submit"]), textarea, select{
     margin: 5px 5px 5px 5px;
     width: 180px;
-}
-input, textarea{
     border: 1px solid black;
 }
 input[type="text"], select{
     height: 25px;
-}
-#form-container{
-    width: auto;
-    text-align: right;
 }
 a{
     text-decoration: none;
@@ -69,12 +68,11 @@ a{
     background:#DDD;
     color: black;
     cursor:pointer;
-    margin-bottom: 20px;
-    margin-top: 10px;
     font-size: 15px;
+    
 }
-#form-container{
-    width: 600;
+input[type="submit"]{
+    margin-top: 20px;
 }
 
 

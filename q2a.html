@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Add new walk</title>
@@ -9,7 +9,7 @@
         
         <header>
             
-            <img id="logo" src="logo.png" width="90px" height="60px">
+            <img id="logo" src="logo.png" alt="OU logo">
             <h1 id="title">The Open University Walking Club</h1>
             
             
@@ -30,19 +30,19 @@
                 <div id="block1">
                     
                     <label for="name">Name of walk: </label>
-                    <input type="text" name="name" required><br>
+                    <input type="text" name="name" id="name" required><br>
                     
                     <label for="date">Date: </label>
-                    <input type="text" name="date" required><br>
+                    <input type="text" name="date" id="date" required><br>
                     
-                    <label for="name">Start time: </label>
-                    <input type="text" name="time" required><br>
+                    <label for="time">Start time: </label>
+                    <input type="text" name="time" id="time" required><br>
                     
                     <label for="meeting">Meeting point: </label>
-                    <input type="text" name="meeting" required><br>
+                    <input type="text" name="meeting" id="meeting" required><br>
                     
-                    <label for="name">Distance: </label>
-                    <input type="text" name="name" required>
+                    <label for="distance">Distance: </label>
+                    <input type="text" name="distance" id="distance" required>
                     
                     <input type="hidden" id="sessionID" name="sessionID" value="12345678-09ab-1111-cdef">
                     
@@ -53,15 +53,15 @@
                     <textarea name="notes" id="notes" rows="7" cols="20"></textarea><br>
                     
                     <label for="status">Status: </label>
-                    <select name="status"><br>
+                    <select name="status" id="status">
                         <option value="approved">Approved</option>
                         <option value="rejected">Rejected</option>
                         <option value="proposed">Proposed</option>
                     </select>
-                    
+                    <br><input class="button" type="submit" value="OK">
                 </div>
                 
-                    <input class="button" type="submit" value="OK">
+                    
                 
             </form>
             </div>
