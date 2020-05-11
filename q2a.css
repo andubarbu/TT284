@@ -41,6 +41,9 @@ input:not([type="submit"]), textarea, select{
     margin: 5px 5px 5px 5px;
     width: 180px;
 }
+input, textarea{
+    border: 1px solid black;
+}
 input[type="text"], select{
     height: 25px;
 }
@@ -83,7 +86,8 @@ footer{
     position: fixed;
     bottom: 0;
     width: 90%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: white;
 }
 #footertext{
     text-align: center;
