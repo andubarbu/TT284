@@ -7,7 +7,8 @@
     </head>
     
     <body>
-        
+        <div id="container">
+            <div id="content-wrap">
         <header>
             
             <img id="logo" src="logo.png" alt="OU logo">
@@ -18,7 +19,6 @@
         
         <p id="loggedin">Logged in as <b>admin</b></p>
             <hr>
-        
         <section>
         
             <h1>Add New Walk</h1>
@@ -59,20 +59,23 @@
                         <option value="rejected">Rejected</option>
                         <option value="proposed">Proposed</option>
                     </select>
-                    <br><input class="button" type="submit" value="OK">
+                    <br>
+                    <input type="submit" id="submit" value="OK">
+                    
                 </div>
                 
                     
                 
             </form>
             </div>
-            
+            <div id="spacer"></div>
         </section>
-        
+            </div>
         <footer>
-            <hr>
-            <p id="footertext"><hr>Copyright © 2020 The Open University</p>
+            <p id="footertext">Copyright © 2020 The Open University</p>
+            
         </footer>
+            </div>
         
     </body>
 </html>
